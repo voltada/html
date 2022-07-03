@@ -1,0 +1,76 @@
+div 
+{
+    box-sizing: border-box
+}
+html, body, ul
+{
+    padding: 0px;
+    margin: 0px;
+}
+.main
+{
+    width: 65%;
+    height: 100vh;
+    background: #000 url(anderssonwise-fon.jpg ) no-repeat center center;
+    background-size: cover;
+    float: left;
+}
+.second, .last
+{
+    width: 35%;
+    height: 50vh;
+    margin-left: 65%;
+    border-left: 16px solid #FFF;
+}
+.second
+{
+    background: #030;
+}
+.last
+{
+    background: #000;
+}
+.second
+{
+    border-bottom: 8px solid #fff;
+}
+.last
+{
+    border-top: 8px solid #fff;
+}
+.main ul
+{
+    list-style: none;
+}
+.main > :first-child
+{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 40px;
+    width: 150px;
+    text-transform: uppercase;
+}
+@media all and (max-width: 1024px) {
+    .main
+    {
+        float: none;
+        width: auto;
+        height: 75vh;
+    }
+    .second, .last
+    {
+        margin: 0px;
+        float: left;
+        width: 50%;
+        border: none;
+        border-top: 16px solid #fff;
+    }
+    .second
+    {
+        border-right: 8px solid #FFF;
+    }
+    .last
+    {
+        border-left: 8px solid #fff;
+    }
+}
